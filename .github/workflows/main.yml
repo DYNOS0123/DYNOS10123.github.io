@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surprise for You</title>
+  <style>
+    /* Background and Body Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #ffccff, #ccffff);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      overflow: hidden;
+      animation: bgMove 10s infinite alternate;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    /* Header Styling */
+    h1 {
+      margin-top: 50px;
+      font-size: 3em;
+      color: #ff66cc;
+      animation: pop 1s ease-out;
+      text-shadow: 2px 2px 4px #ff99cc;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    /* Message Box Styling */
+    .message {
+      margin: 20px auto;
+      max-width: 600px;
+      font-size: 1.5em;
+      color: #663399;
+      line-height: 1.8;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      animation: typing 4s steps(50, end), fadeIn 5s ease;
+      white-space: nowrap;
+      overflow: hidden;
+      border: 2px dashed #ff99cc;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Floating Hearts */
+    .floating-hearts {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .floating-hearts span {
+      position: absolute;
+      color: #ff66cc;
+      font-size: 20px;
+      animation: floatUp 4s infinite ease-in-out;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-50px); opacity: 0; }
+    }
+
+    /* Heart Animation */
+    .heart {
+      font-size: 50px;
+      color: #ff3366;
+      animation: heartbeat 1s infinite, floatUp 5s infinite ease-in-out;
+      margin-top: 30px;
+      position: relative;
+    }
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.5); }
+      100% { transform: scale(1); }
+    }
+
+    /* Button Styling */
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      color: #fff;
+      background-color: #ff66cc;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .button:hover {
+      background-color: #ff99cc;
+      transform: scale(1.1);
+    }
+
+    /* Footer Styling */
+    .footer {
+      margin-top: 40px;
+      font-size: 1.2em;
+      color: #b398b0;
+    }
+
+    /* Hidden YouTube Player */
+    iframe {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <h1>🎉 HAPPY BIRTHDAY DER AMUAY 🧸</h1>
+
+  <!-- Message -->
+  <div class="message">
+    KHR HAI U D MI HAENG DER ☺️<br/>
+    H Y KR HAI MUN DAI MUN MARN.<br/>
+    YAI KHUAN EIK PY LEO H Y KR HAI TUNG JAI<br/>
+    UN DAI SUPPORT DAI KR SI SUPPORT TEM T.<br/>
+    H Y KR HAI MI SATI KHIT KRN LA MUT LA VUNG<br/>
+    DAE PEN HUANG KHAO JAI BR.<br/>
+    HUK LA WANG D KHUE KHAO DER 🤍
+  </div>
+
+  <!-- Heart Animation -->
+  <div class="heart">💖</div>
+
+  <!-- Floating Hearts -->
+  <div class="floating-hearts">
+    <span style="left: 20%; animation-duration: 3s;">💖</span>
+    <span style="left: 50%; animation-duration: 4s;">💗</span>
+    <span style="left: 80%; animation-duration: 5s;">💕</span>
+  </div>
+
+  <!-- Button -->
+  <a href="#" class="button">🤍</a>
+
+  <!-- Footer -->
+  <div class="footer">BY: BALL</div>
+
+  <!-- Embedded YouTube Audio -->
+  <iframe src="https://www.youtube.com/embed/mX5c0ZKZSOg?autoplay=1&loop=1&playlist=mX5c0ZKZSOg" allow="autoplay"></iframe>
+</body>
+</html>
